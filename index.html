@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        
+        .circle {
+            position:absolute;
+            display:flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            top: 90%;
+            left: 1%;
+            transform: translate(-1%, -90%);
+            font-size:10px;
+            width: 400px;
+            border-radius:20px;
+            height: 10px;
+            background:orange;
+            animation-name:bar;
+            animation-duration:9s;
+            animation-direction:linear;
+            animation-iteration-count:1;
+        }
+        
+        
+
+
+        
+        
+
+        @keyframes bar
+        {
+            from
+            {
+                background-color:red;
+                width:10px;
+                height:10px;
+            }
+            
+            to
+                        {
+                
+                background-color:orange;
+                width:400px;
+                height:10px;
+                   
+                    
+                     
+                    }
+
+        }
+     
+         .background-video
+         {
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            min-width:100%;
+            min-height:100%;
+            width:auto;
+            height:auto;
+            z-index:-1;
+            background-size:cover;
+         }
+    
+        .s_circle {
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -90%);
+            border: 1px solid white;
+            width: 400px;
+            border-radius: 20px;
+            transition:width 0.3s;
+            height:10px;
+        
+        
+
+            
+        }
+
+        .button {
+            position: absolute;
+            top: 75%;
+            left:47%;
+            transform: translate(-85%, -50%);
+            width: 75px;
+            height: 30px;
+            border-right:none;
+            cursor: pointer;
+            border-top-left-radius: 10px; 
+            border-bottom-left-radius: 10px; 
+        }
+        
+        .button1 {
+            position: absolute;
+            top: 75%;
+            left: 53%;
+            cursor: pointer;
+            transform: translate(-55%, -50%);
+            width: 75px;
+            height: 30px;
+            border-top-right-radius: 10px; 
+            border-left:none;
+            border-bottom-right-radius: 10px; 
+        }
+
+        .button2
+        {
+            float: right;
+        }
+
+        a
+        {
+            color:white;
+            position:absolute;
+            text-decoration:none;
+            cursor: pointer;
+            top:90%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            font-size:14px;
+            animation-name:btn;
+            animation-duration:2s;
+            animation-iteration-count:infinite;
+
+        
+
+        }
+
+        @keyframes btn {
+
+            from
+            {
+                color:grey;
+            }
+            to
+            {
+                color:white;
+            }
+            
+        }
+
+        .f
+        {
+               background-color:blue;
+               color:white;
+               padding:5px;
+               position:absolute;
+               top:80%;
+               left:50%;
+               width:150px;
+               border:2px solid blue;
+               border-radius:10px;
+               transform:translate(-50%,-50%);
+               cursor: pointer;
+            }
+            
+            .G
+            {
+                background-color:grey;
+                color:white;
+                padding:5px;
+                border-radius:10px;
+                position:absolute;
+                border:2px solid grey;
+                top:93%;
+                width:55px;
+                margin-right:4px;
+               left:46%;
+               transform:translate(-50%,-50%);
+               cursor: pointer;
+        }
+
+        .GS
+            {
+                background-color:grey;
+                color:white;
+                padding:5px;
+                border-radius:10px;
+                position:absolute;
+                border:2px solid grey;
+                top:93%;
+                width:55px;
+                cursor: pointer;
+               left:53%;
+               transform:translate(-50%,-50%);
+        }
+
+        .or
+        {
+             color:white;
+             position:absolute;
+             top:83%;
+             left: 50%;
+             transform:translate(-50%,-50%);
+        }
+    </style>
+    <title>Game</title>
+</head>
+
+<body>
+
+    <video autoplay muted loop class="background-video">
+        <source src="img2024/back.mp4" type="video/mp4">
+    </video>
+    
+    
+   <button class="f" id="f">facebook</button><br><br>
+   <p class="or" id="or">_____ or ______</p>
+   <button class="G" id="G">More</button>
+   <button class="GS" id="GS">Guest</button>
+    
+    <div class="s_circle" id="pro">
+        
+        <div class="circle"   id="count" ></div>
+
+</div>
+
+      <a id="btn" href="ch.html">Tap to open</a>
+
+    
+      
+<!-- <button class="button1" id="b2" onclick="start()">Start</button> -->
+<!-- <button class="button" id="b1" onclick="clk_b1()">Stop</button> -->
+    <!-- <button class="button2" id="b3" onclick="clk_b3()"><i class="fa-solid fa-arrows-rotate"></i></button> -->
+
+</body>
+
+
+<script>
+
+
+    const count=document.getElementById('count');
+    let i=0;
+    // function start()
+    // {
+
+        // b2.style.background = 'green'
+        // b2.style.color = 'white'
+
+        setInterval(()=>{
+            
+            if (i==100){
+                clearInterval();
+                
+                
+            }
+            else
+            {
+                i+=1;
+                count.textContent=i+"%";
+                
+                
+            }
+            
+        },78);
+
+
+        document.addEventListener("DOMContentLoaded",function(){
+
+            let progress=document.getElementById("count")
+            let bt1=document.getElementById("f")
+            let bt2=document.getElementById("G")
+            let openbtn=document.getElementById("btn")
+            let bt3=document.getElementById("GS")
+            let or=document.getElementById("or")
+            let width=0;
+            let b=0;
+
+            let interval= setInterval(function(){
+
+                if(width>=100)
+            {
+                 clearInterval(interval);
+                 document.getElementById("pro").style.display="none"
+                 if(b!=1)
+                 {
+
+                     openbtn.style.display="inline-block"
+                    }
+                    else
+                    {
+                        
+                        
+                        bt1.style.display="inline-block"
+                        bt2.style.display="inline-block"
+                        bt3.style.display="inline-block"
+                        or.style.display="inline-block"
+                    }
+                }
+                else
+                {
+                    width++;
+                    progress.style.width=width+ "%";
+                    openbtn.style.display="none"
+                    bt1.style.display="none"
+                    bt2.style.display="none"
+                    bt3.style.display="none"
+                    or.style.display="none"
+            }
+            }, 78)
+        })
+    // }
+    // function clk_b1() {
+
+
+    //     clearInterval();
+    //     b1.style.background = 'red'
+    //     b1.style.color = 'white'
+    //     b2.style.background = 'white'
+    //     b2.style.color = 'black'
+
+    // }
+
+//     function clk_b2() {
+
+//         b2.style.background = 'green'
+//         b2.style.color = 'white'
+//         b1.style.background = 'white'
+//         b1.style.color = 'black'
+
+//     }
+
+    
+//     function clk_b3() {
+
+// b1.style.background = 'white'
+// b1.style.color = 'black'
+// b2.style.background = 'white'
+// b2.style.color = 'black'
+
+// }
+
+</script>
+
+</html>
