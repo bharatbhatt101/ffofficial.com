@@ -1,0 +1,886 @@
+html
+{
+     font-size:62.5%;
+}
+
+body {
+    background-image: url('img2024/FREEFIRE.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sscreen
+    {
+        display:none;
+    }
+.f_nav {
+    width: 45rem;
+    height: 3rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    background: #06060672;
+    margin-top: -.5rem;
+    margin-left: -.5rem;
+
+}
+
+.char {
+    width: 20rem;
+    background: rgb(214, 77, 77);
+    color: white;
+    border: none;
+    height: 3rem;
+    margin-top: -.1rem;
+}
+
+.coin p {
+    color: white;
+    margin-left: 1.9rem;
+    margin-right: 1.9rem;
+    font-size: 1.5rem;
+}
+
+.coin p i {
+    color: #ffe100;
+}
+
+.dimond a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1.9rem;
+    font-size: 1.5rem;
+}
+
+.dimond a i {
+    color: blue;
+}
+
+.top_up {
+    color: white;
+    margin-right: 1.9rem;
+    font-size: 1.5rem;
+}
+
+.down {
+    color: white;
+    text-decoration: none;
+    margin-right: 1.9rem;
+    font-size: 1.5rem;
+}
+
+.b1 {
+    background: orangered;
+    width: 3rem;
+    height: 3rem;
+    border: .2rem solid white;
+    margin-top: -.1rem;
+}
+
+.b1 p {
+    color: white;
+    margin-top: .3rem;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.pk {
+    position: absolute;
+    top: 0;
+    font-size: 1.2rem;
+    overflow: hidden;
+    left: 6%;
+    transform: translate(-50%, -50%);
+}
+
+.f_nav_r {
+    width: 30rem;
+    height: 3rem;
+    position: absolute;
+    top: 2%;
+    left: 75%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    background: #06060672;
+    margin-top: -.5rem;
+    margin-left: -.5rem;
+
+}
+
+.char_r {
+    width: 20rem;
+    background: rgb(214, 77, 77);
+    color: white;
+    border: none;
+    height: 3rem;
+    margin-top: -.1rem;
+}
+
+.coin_r p {
+    color: white;
+    margin-left: 1.9rem;
+    margin-right: 1.9rem;
+    font-size: 1.5rem;
+}
+
+.dimond_r a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1.9rem;
+    font-size: 1.5rem;
+}
+
+.top_up_r {
+    color: white;
+    margin-right: 1.9rem;
+    font-size: 1.5rem;
+}
+
+.down_r {
+    color: white;
+    text-decoration: none;
+    margin-right: 1.9rem;
+    font-size: 1.5rem;
+}
+
+.b1_r {
+    background: #06060672;
+    width: 10rem;
+    height: 3rem;
+
+    margin-top: -.1rem;
+}
+
+.b1_r p {
+    color: #ffe100;
+    margin-top: .3rem;
+    text-align: center;
+    font-size: 1.8rem;
+
+}
+
+.pk_r {
+    position: absolute;
+    top: 0;
+    font-size: 1.2rem;
+    overflow: hidden;
+    left: 6%;
+    transform: translate(-50%, -50%);
+}
+
+.f_nav_d {
+    width: 40rem;
+    position: absolute;
+    top: 94%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    margin-top: -.5rem;
+    margin-left: -.5rem;
+    border: .1rem solid white;
+}
+
+.char_d {
+    width: 20rem;
+    background: rgb(214, 77, 77);
+    color: white;
+    border: none;
+    height: 3rem;
+    margin-top: -.1rem;
+}
+
+.coin_d p {
+    color: white;
+    margin-left: 1.9rem;
+    margin-right: 1.9rem;
+    font-size: 1.5rem;
+}
+
+.dimond_d a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1.9rem;
+    font-size: 1.5rem;
+}
+
+.top_up_d {
+    color: white;
+    margin-right: 1.9rem;
+    font-size: 1.5rem;
+}
+
+.down_d {
+    color: white;
+    text-decoration: none;
+    margin-right: 1.9rem;
+    font-size: 1.5rem;
+}
+
+.b1_d {
+    background: #06060672;
+    width: 3rem;
+    height: 3rem;
+    border: .1rem solid white;
+    margin-top: -.1rem;
+}
+
+.b1_d p {
+    color: orange;
+    margin-top: .3rem;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.pk_d {
+    position: absolute;
+    top: 0;
+    font-size: 1.2rem;
+    overflow: hidden;
+    left: 6%;
+    transform: translate(-50%, -50%);
+}
+
+.circle {
+    margin-top: 1rem;
+    background: #06060672;
+    color: white;
+    width: 12.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+.st {
+    width: 15rem;
+    height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    background: orange;
+    border: .1rem solid white;
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    left: 87%;
+    color: white;
+}
+
+.st1 {
+    width: 15rem;
+    height: 4rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    background: transparent;
+    border: .1rem solid white;
+    cursor: pointer;
+    position: absolute;
+    top: 82%;
+    left: 87%;
+    color: blue;
+}
+
+.st2 {
+    width: 15rem;
+    height: 4rem;
+    border-radius: .5rem;
+    font-size: .14rem;
+    background: transparent;
+    border: .1rem solid white;
+    cursor: pointer;
+    position: absolute;
+    top: 74%;
+    left: 87%;
+    color: white;
+}
+
+.friends {
+    background: #06060672;
+    color: white;
+    width: 20rem;
+    height: 31rem;
+    border: .1rem solid white;
+    position: absolute;
+    top: 11%;
+    left: 83%;
+}
+
+.all {
+    margin-top: 9rem;
+}
+
+.event {
+    background: #06060672;
+    color: white;
+    width: 18rem;
+    height: 7rem;
+    border: .1rem solid white;
+    position: absolute;
+    top: 8%;
+    left: 1%;
+}
+
+.fd {
+    width: 15rem;
+    height: 3rem;
+    background: white;
+    margin-top: .7rem;
+
+
+    margin-left: .3rem;
+}
+
+.inp {
+    margin-top: .5rem;
+    margin-left: .5rem;
+    width: 15rem;
+    background: #06060672;
+    color: white;
+}
+
+.lb {
+    color: black;
+    background: white;
+    width: 20rem;
+    height: 2rem;
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.1rem;
+}
+
+.gm {
+
+
+    /* font-size:10rem; */
+
+    position: absolute;
+
+    top: 40%;
+    left: 20%;
+}
+
+.gm img {
+    width: 12rem;
+    background: transparent;
+    height: 8rem;
+}
+
+.start {
+    width: 12rem;
+    height: 4rem;
+    background: orange;
+    position: absolute;
+    color: black;
+    top: 12%;
+    left: 50%;
+    padding-top: .3rem;
+    transform: translate(-50%, -50%);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    border: .2rem solid white;
+    animation-name: stm;
+    animation-duration: 4s;
+    animation-iteration-count: 20;
+    animation-direction: alternate;
+}
+
+@keyframes stm {
+
+    100% {
+        background-color: rgb(249, 189, 76);
+    }
+
+}
+
+.start_1 {
+    width: 15rem;
+    height: 4rem;
+    background: orange;
+    position: absolute;
+    color: black;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    border: .2rem solid white;
+
+}
+
+.r1 {
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    align-items: center;
+}
+
+.r1 button {
+    margin-left: .5rem;
+    background-color: #06060672;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.cl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#cb {
+    position: absolute;
+    top: 0.4%;
+    left: 56.4%;
+    cursor: pointer;
+    border: none;
+    background: #06060672;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.sto,
+.bp,
+.miss,
+.luck,
+.eve {
+    width: 100%;
+    height: 100%;
+    background-color: #06060672;
+    /* border:2rem solid white; */
+}
+
+.sto button,
+.bp button,
+.miss button,
+.luck button,
+.eve button {
+    float: right;
+    width: 3rem;
+    height: 3rem;
+    color: orange;
+    background: #06060672;
+    border: .2rem solid transparent;
+    cursor: pointer;
+}
+
+.dfc {
+
+    width: 15rem;
+    height: 46rem;
+    display: inline-block;
+    border: .1rem solid white;
+    background: #06060675;
+}
+
+.dfc .df1 {
+    font-size: 1.5rem;
+    margin-left: .7rem;
+    cursor: pointer;
+    margin-top: 0;
+    color: white;
+    padding: .5rem;
+    background-color: transparent;
+}
+
+.smai {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+    padding-top: 4%;
+}
+
+.dfc_1 {
+
+    width: 52rem;
+    height: 46rem;
+    display: inline-block;
+    border: .1rem solid white;
+    background: linear-gradient(150deg, purple 30%, red 70%);
+}
+
+
+.dfc_1 h2 {
+    margin-left: 14%;
+    color: orange;
+}
+
+.box_main {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.dfc_1 .box {
+    border: .1rem solid #06060672;
+    width: 18rem;
+    height: 10rem;
+    margin: .3rem;
+    cursor: pointer;
+
+}
+
+.head,
+.r_leg,
+.r_hand,
+.l_leg,
+.l_hand,
+.body,
+.neck {
+    position: absolute;
+    background: #f6c595;
+}
+
+.head {
+    width: 6rem;
+    height: 6rem;
+    /* border-radius:50%; */
+    border-top: 2rem solid black;
+    border-left: 0.4rem solid black;
+    border-right: 0.4rem solid black;
+    border-bottom: 0.8rem solid black;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    top: 30.4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.neck {
+    width: 3rem;
+    height: 3rem;
+    top: 38%;
+    left: 48.5%;
+
+}
+
+
+.body {
+    width: 8rem;
+    height: 15rem;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(129, 191, 129);
+}
+
+.r_hand,
+.l_hand {
+    width: 2rem;
+    height: 7rem;
+    top: 43%;
+    background: #ffcc99;
+    border-top: 2rem solid rgb(129, 191, 129);
+}
+
+
+.l_hand {
+
+    left: 45%;
+    transform-origin: top left;
+    animation: wave infinite 1s alternate;
+}
+
+
+.r_hand {
+    right: 45%;
+    transform-origin: top right;
+    animation: wave infinite 1s alternate;
+}
+
+.eye,
+.r_eye {
+    position: absolute;
+    top: 35%;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.eye {
+    left: 30%;
+}
+
+.r_eye {
+
+    right: 30%;
+}
+
+.mouth {
+
+    position: absolute;
+    top:65%;
+    width:1.3rem;
+    height:.5rem;
+    border-top-left-radius:.5rem;
+    border-top-right-radius:.5rem;
+    border:.1rem solid black;
+    border-top:.3rem solid black;
+    left:38%;
+    animation:wave3 1s alternate infinite;
+}
+
+@keyframes wave3 {
+    
+    
+    0%
+    {
+        border-top-left-radius:.5rem;
+        border-top-right-radius:.5rem;
+        
+    }
+    
+    100%
+    {
+        border-bottom-left-radius:.5rem;
+        border-bottom:.3rem solid black;
+        border-bottom-right-radius:.5rem;
+
+    }
+    
+}
+
+@keyframes wave {
+
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(-30deg);
+
+
+    }
+}
+
+/* 
+    @keyframes wave2 {
+
+        0% {
+            transform: rotateZ(0deg);
+        }
+
+        100% {
+            transform: rotateZ(-30deg);
+        }
+
+    } */
+
+.r_leg,
+.l_leg {
+    width: 2.5rem;
+    height: 10rem;
+    top: 71%;
+    background: black;
+}
+
+
+.l_leg {
+
+    left: 47%;
+    animation: wave2 infinite 1s alternate;
+    transform-origin: top left;
+}
+
+.r_leg {
+
+    right: 47%;
+    animation: wave2 infinite 1s alternate;
+    transform-origin: top left;
+}
+
+.emote
+{
+     width:25rem;  
+     height:25rem;
+     border-radius:50%;
+     z-index:1;
+     position:absolute;
+     top:50%;             opacity:0;  
+     background: #06060672;
+     left:50%;
+     transform:translate(-50%,-50%);
+     border:.2rem solid white;
+     overflow: hidden;  
+    }
+    
+    .e1
+    {
+        width:15rem;  
+        background: #06060672;
+     height:15rem;
+     border-radius:50%;
+     z-index:1;
+     position:absolute;
+     top:50%;
+     opacity:0;  
+     left:50%;
+     transform:translate(-50%,-50%);
+     border:.2rem solid white;
+     overflow: hidden;
+}
+
+.line
+{
+    position: absolute;
+    border-radius:50%;
+    top:50%;
+    width:5rem;
+    height:5rem;
+    background:red;
+    left:0;
+    border:.2rem solid white;
+    transform:rotate(45deg);
+}
+
+.line1
+{
+    position: absolute;
+    border-radius:50%;
+    top:29%;
+    width:5rem;
+    background:green;
+    height:5rem;
+    left:0;
+    border:.2rem solid white;
+    transform:rotate(45deg);
+}
+
+.line2
+{
+    position: absolute;
+    border-radius:50%;
+    top:11%;
+    background:orange;
+    width:5rem;
+    height:5rem;
+    left:11%;
+    border:.2rem solid white;
+    transform:rotate(45deg);
+}
+
+.line3
+{
+    position: absolute;
+    border-radius:50%;
+    top:-2%;
+    width:5rem;
+    height:5rem;
+    left:24%;
+    border:.2rem solid white;
+    transform:rotate(45deg);
+}
+
+.line4
+{
+    position: absolute;
+    border-radius:50%;
+    top:50%;
+    width:5rem;
+    height:5rem;
+    left:0;
+    border:.2rem solid white;
+    transform:rotate(45deg);
+}
+
+.line5
+{
+    position: absolute;
+    border-radius:50%;
+    top:50%;
+    width:5rem;
+    height:5rem;
+    left:0;
+    border:.2rem solid white;
+    transform:rotate(45deg);
+}
+
+@media screen and (max-width:768px) {
+    
+    html
+    {
+        font-size:40%;
+    }
+    
+}
+
+@media screen and (max-width:470px) {
+    
+    .main
+    {
+        display:none;
+    }
+
+    .sscreen
+    {
+        display: inline-block;
+        background-image:url('img2024/FREEFIRE.jpeg');
+        background-repeat:no-repeat;
+        background-size: cover;
+        width:100%;
+        height:100%;
+    }
+
+    .alert
+    {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        width:50vh;
+        height:30vh;
+        border:.2rem solid white;
+        border-top:5rem solid orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .img img
+    {
+        width:8rem;
+        height:8rem;
+        border-radius:50%;
+
+    }
+
+    .text p
+    {
+         color:white;
+         font-size:2rem;
+
+    }
+    
+}
