@@ -1,362 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-
-
+     
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
-
-        html
-        {
-            font-size:62.5%;
-        }
-
-        
-        .circle {
-            position:absolute;
-            display:flex;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            color:white;
-            top: 90%;
-            left: 1%;
-            transform: translate(-1%, -90%);
-            font-size:1rem;
-            width: 40rem;
-            border-radius:2rem;
-            height: 1rem;
-            background:orange;
-            animation-name:bar;
-            animation-duration:9s;
-            animation-direction:linear;
-            animation-iteration-count:1;
-        }
-        
-        
-
-
-        
-        
-
-        @keyframes bar
-        {
-            from
-            {
-                background-color:red;
-                width:1rem;
-                height:1rem;
-            }
-            
-            to
-                        {
-                
-                background-color:orange;
-                width:40rem;
-                height:1rem;
-                   
-                    
-                     
-                    }
-
-        }
-     
-         .background-video
-         {
-            position: absolute;
-            top: 50%;
-            left:50%;
-            transform:translate(-50%,-50%);
-            min-width:100%;
-            min-height:100%;
-            width:auto;
-            height:auto;
-            z-index:-1;
-            background-size:cover;
-         }
-    
-        .s_circle {
-            position: absolute;
-            top: 90%;
-            left: 50%;
-            transform: translate(-50%, -90%);
-            border: .1rem solid white;
-            width: 40rem;
-            border-radius: 2rem;
-            transition:width 0.3s;
-            height:1rem;
-        
-        
-
-            
-        }
-
-        .button {
-            position: absolute;
-            top: 75%;
-            left:47%;
-            transform: translate(-85%, -50%);
-            width: 7.5rem;
-            height: 3rem;
-            border-right:none;
-            cursor: pointer;
-            border-top-left-radius: 10rem; 
-            border-bottom-left-radius: 10rem; 
-        }
-        
-        .button1 {
-            position: absolute;
-            top: 75%;
-            left: 53%;
-            cursor: pointer;
-            transform: translate(-55%, -50%);
-            width: 7.5rem;
-            height: 3rem;
-            border-top-right-radius: 1rem; 
-            border-left:none;
-            border-bottom-right-radius: 1rem; 
-        }
-
-        .button2
-        {
-            float: right;
-        }
-
-        a
-        {
-            color:white;
-            position:absolute;
-            text-decoration:none;
-            cursor: pointer;
-            top:90%;
-            left:50%;
-            transform:translate(-50%,-50%);
-            font-size:1.4rem;
-            animation-name:btn;
-            animation-duration:2s;
-            animation-iteration-count:infinite;
-
-        
-
-        }
-
-        @keyframes btn {
-
-            from
-            {
-                color:grey;
-            }
-            to
-            {
-                color:white;
-            }
-            
-        }
-
-        .f
-        {
-               background-color:blue;
-               color:white;
-               padding:.5rem;
-               position:absolute;
-               top:80%;
-               left:50%;
-               width:15rem;
-               border:.2rem solid blue;
-               border-radius:1rem;
-               transform:translate(-50%,-50%);
-               cursor: pointer;
-            }
-            
-            .G
-            {
-                background-color:grey;
-                color:white;
-                padding:.5rem;
-                border-radius:1rem;
-                position:absolute;
-                border:.2rem solid grey;
-                top:93%;
-                width:5.5rem;
-                margin-right:.4rem;
-               left:46%;
-               transform:translate(-50%,-50%);
-               cursor: pointer;
-        }
-
-        .GS
-            {
-                background-color:grey;
-                color:white;
-                padding:.5rem;
-                border-radius:1rem;
-                position:absolute;
-                border:.2rem solid grey;
-                top:93%;
-                width:5.5rem;
-                cursor: pointer;
-               left:53%;
-               transform:translate(-50%,-50%);
-        }
-
-        .or
-        {
-             color:white;
-             position:absolute;
-             top:83%;
-             left: 50%;
-             transform:translate(-50%,-50%);
-        }
-
-        @media screen and (max-width:768px) {
-            
-            html
-            {
-                font-size:40%;
-            }
-            
-        }
-    </style>
     <title>Game</title>
 </head>
 
 <body>
-
-    <video autoplay muted loop class="background-video">
-        <source src="img2024/back.mp4" type="video/mp4">
-    </video>
-    
-    
-   <button class="f" id="f">facebook</button><br><br>
-   <p class="or" id="or">_____ or ______</p>
-   <button class="G" id="G">More</button>
-   <button class="GS" id="GS">Guest</button>
-    
-    <div class="s_circle" id="pro">
-        
-        <div class="circle"   id="count" ></div>
-
-</div>
-
-      <a id="btn" href="ch.html">Tap to open</a>
-
+    <div class="main" id="pre">
+        <iframe
+          width="0"
+          height="0"
+          src="https://www.youtube.com/embed/EIWyuA1eFd4"
+          title="Andromedik &amp; Used - Take Me | DnB | NCS - Copyright Free Music"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="0"
+          height="0"
+          src="https://www.youtube.com/embed/EIWyuA1eFd4"
+          title="Andromedik &amp; Used - Take Me | DnB | NCS - Copyright Free Music"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="0"
+          height="0"
+          src="https://www.youtube.com/embed/EIWyuA1eFd4"
+          title="Andromedik &amp; Used - Take Me | DnB | NCS - Copyright Free Music"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <div class="img">
+          <img class="log" src="img2024/">
+        </div>
+      </div>
     
       
 <!-- <button class="button1" id="b2" onclick="start()">Start</button> -->
 <!-- <button class="button" id="b1" onclick="clk_b1()">Stop</button> -->
     <!-- <button class="button2" id="b3" onclick="clk_b3()"><i class="fa-solid fa-arrows-rotate"></i></button> -->
-
+<div class="sscreen">
+        <div class="alert">
+            <div class="img"><img src="img2024/ffm.jpeg" alt=""></div>
+            <div class="text"><p>Free Fire is not for your device.<br>(Rotate your screen) </p></div>
+        </div>
+</div>
 </body>
 
 
-<script>
 
-
-    const count=document.getElementById('count');
-    let i=0;
-    // function start()
-    // {
-
-        // b2.style.background = 'green'
-        // b2.style.color = 'white'
-
-        setInterval(()=>{
-            
-            if (i==100){
-                clearInterval();
-                
-                
-            }
-            else
-            {
-                i+=1;
-                count.textContent=i+"%";
-                
-                
-            }
-            
-        },78);
-
-
-        document.addEventListener("DOMContentLoaded",function(){
-
-            let progress=document.getElementById("count")
-            let bt1=document.getElementById("f")
-            let bt2=document.getElementById("G")
-            let openbtn=document.getElementById("btn")
-            let bt3=document.getElementById("GS")
-            let or=document.getElementById("or")
-            let width=0;
-            let b=0;
-
-            let interval= setInterval(function(){
-
-                if(width>=100)
-            {
-                 clearInterval(interval);
-                 document.getElementById("pro").style.display="none"
-                 if(b!=1)
-                 {
-
-                     openbtn.style.display="inline-block"
-                    }
-                    else
-                    {
-                        
-                        
-                        bt1.style.display="inline-block"
-                        bt2.style.display="inline-block"
-                        bt3.style.display="inline-block"
-                        or.style.display="inline-block"
-                    }
-                }
-                else
-                {
-                    width++;
-                    progress.style.width=width+ "%";
-                    openbtn.style.display="none"
-                    bt1.style.display="none"
-                    bt2.style.display="none"
-                    bt3.style.display="none"
-                    or.style.display="none"
-            }
-            }, 78)
-        })
-    // }
-    // function clk_b1() {
-
-
-    //     clearInterval();
-    //     b1.style.background = 'red'
-    //     b1.style.color = 'white'
-    //     b2.style.background = 'white'
-    //     b2.style.color = 'black'
-
-    // }
-
-//     function clk_b2() {
-
-//         b2.style.background = 'green'
-//         b2.style.color = 'white'
-//         b1.style.background = 'white'
-//         b1.style.color = 'black'
-
-//     }
-
-    
-//     function clk_b3() {
-
-// b1.style.background = 'white'
-// b1.style.color = 'black'
-// b2.style.background = 'white'
-// b2.style.color = 'black'
-
-// }
-
-</script>
 
 </html>
